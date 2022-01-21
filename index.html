@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grras Parking System | Home Page</title>
+    <link rel="stylesheet" href="styles/gps.css">
+    <script src="scripts/app.js" type="module"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="gps ">GPS</h1>
+            <ul>
+                <li>
+                    <a href="">User</a>
+                </li>
+                <li>
+                    <a href="">Vehicle</a>
+                </li>
+                <li>
+                    <a href="">Pass</a>
+                </li>
+                <li>
+                    <a href="">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="user">
+        <h1 class="heading">User Registration</h1>
+        <div class="box">
+            <form action="" class="formu">
+                <div class="name"><input type="name" id="name" placeholder="Name" required></div>
+                <div class="email"><input type="email" id="email" placeholder="example123@abc.com" required></div>
+                <div class="dob"><input type="date" id="dob" placeholder="Date of Birth" required></div>
+                <div class="contact"><input type="contact" id="contact" placeholder="Contact details" required></div>
+                <div class="vehicle"><select name="vehicle" id="choice">
+                <option value="" disabled selected>--Select the User--</option>
+                <option value="cycle">Student</option>
+                <option value="bike">Staff</option>
+                <option value="car">Guest</option>
+            </select></div>
+                <input type="button" id="addUser" value="ADD">
+            </form>
+        </div>
+    </section>
+    <section id="vehicle">
+        <h1 class="heading2">Vehicle Registration</h1>
+        <form action="" class="formv">
+            <select name="vehicle" id="choice">
+                <option value="" disabled selected>--Select a Vehicle--</option>
+                <option value="cycle">Cycle</option>
+                <option value="bike">Bike</option>
+                <option value="car">Car</option>
+            </select>
+            <input type="text" id="number" placeholder="Vehicle Number" required>
+            <input type="text" id="brand" placeholder="Brand" required>
+            <textarea name="" id="identity" placeholder="Vehicle Description" cols="30" rows="10"></textarea>
+            <input type="button" id="addVehicle" value="ADD">
+        </form>
+    </section>
+    <section id="pass">
+        <h1 class="pass">Pass</h1>
+        <input type="button" id="daily" value="Daily">
+        <input type="button" id="weekly" value="Weekly">
+        <input type="button" id="monthly" value="Monthly">
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+ul li {
+    list-style: none;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+#header ul {
+    display: flex;
+}
+
+#header ul li a {
+    padding: 10px 15px;
+    color: #387bab;
+    font-weight: bold;
+}
+
+#user .form {
+    padding: 20px;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+
+#user.form {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px;
+    box-sizing: content-box;
+    border-radius: 3px;
+    border: solid thin #ccc;
+}
+
+#user .form input[type=button] {
+    background-color: orange;
+}
